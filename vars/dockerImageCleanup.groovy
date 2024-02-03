@@ -1,4 +1,4 @@
- def call(String ImageName, String ImageTag, String hubUser){
+ def call(String ImageName, String ImageTag, String DockerHub){
     
      sh """
       docker rmi ${DockerHub}/${ImageName}:${ImageTag}
