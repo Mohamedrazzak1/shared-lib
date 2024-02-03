@@ -2,6 +2,9 @@
     
      sh """
       docker rmi ${DockerHub}/${ImageName}:${ImageTag}
-      docker rmi ${DockerHub}/${ImageName} ${DockerHub}/${ImageName}:latest
+      docker rmi ${DockerHub}/${ImageName}:latest
      """
  }
+
+
+    
