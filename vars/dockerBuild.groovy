@@ -1,4 +1,4 @@
- def call(String ImageName, String ImageTag, String AppName){
+ def call(String ImageName, String ImageTag, String DockerHub){
     
      sh """
       docker image build -t ${AppName}/${ImageName} . 
