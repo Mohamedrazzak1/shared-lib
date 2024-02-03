@@ -1,4 +1,4 @@
- def call(String ImageName, String ImageTag, String DockerHub){
+ def call(String ImageName, String DockerHub){
     
      sh """   
       trivy image ${DockerHub}/${ImageName}:latest > scan.txt
